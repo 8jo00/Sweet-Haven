@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweets </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.webp" alt="Sweet Haven Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sweets.html">Sweets</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search Sweets..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Catalog -->
+    <section id="catalog">
+        <div class="product" data-name="Frankford Marvel Universe ">
+            <img src="Frankford Marvel Universe 20 Count Easter Egg Hunt with Smarties Candy, 3.17oz.webp" alt="Frankford Marvel Universe">
+            <h3>Frankford Marvel Universe</h3>
+            <p>About this item <br>
+             <ul>
+               <li> Marvel Universe Easter Egg Hunt Bag</li>
+              <li>20 colorful plastic eggs with sweets inside</li>
+               </p>
+               <span>$11.50 BZD</span>
+            <button onclick="addToCart('Frankford Marvel Universe ', 11.50)">Add to Cart</button>
+        </div>
+           <div class="product" data-name="SOUR PATCH KIDS">
+               <img src="SOUR PATCH KIDS.avif" alt="SOUR PATCH KIDS">
+               <h3>SOUR PATCH KIDS</h3>
+               <p>About this item<br>
+                   <li>One 8 oz bag of SOUR PATCH KIDS Watermelon Soft & Chewy Cand</li></p>
+               <span>$8 BZD</span>
+               <button onclick="addToCart('SOUR PATCH KIDS', 8)">Add to Cart</button>
+           </div>
+   
+           <div class="product" data-name="Cadbury Mini Eggs ">
+               <img src="Cadbury Mini Eggs.webp" alt="Cadbury Mini Eggs ">
+               <h3>Cadbury Mini Eggs </h3>
+               <p>About this item<br>
+                  <li> Contains one (1) 9-ounce bag of CADBURY MINI EGGS Milk Chocolate with a Crisp Sugar Shell Candy</li></p>
+               <span>$12 BZD</span>
+               <button onclick="addToCart('Cadbury Mini Eggs ', 12)">Add to Cart</button>
+           </div>
+        <div class="product" data-name="Reese's Milk Chocolate Peanut Butter Egg Easter">
+            <img src="Reese's Milk Chocolate Peanut Butter Egg Easter.webp" alt="Reese's Milk Chocolate Peanut Butter Egg Easter">
+            <h3>Reese's Milk Chocolate Peanut Butter Egg Easter</h3>
+            <p>About this item<br>
+               <li>Contains one (1) 1.2-ounce pack of REESE'S Milk Chocolate Peanut Butter Egg Candy.</li> 
+            </p>
+            <span>$7.50 BZD</span>
+            <button onclick="addToCart('Reeses Milk Chocolate Peanut Butter Egg Easter', 7.50)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Kit Kat Milk Chocolate Wafer Snack ">
+            <img src="Kit Kat Milk Chocolate Wafer Snack.webp" alt="Kit Kat Milk Chocolate Wafer Snack ">
+            <h3>Kit Kat Milk Chocolate Wafer Snack </h3>
+            <p>About this item<br>
+              <li> Contains one (1) 8.85-ounce bag of KIT KAT Milk Chocolate Wafer Snack.</li> </p>
+            <span>$10.50 BZD</span>
+            <button onclick="addToCart('Kit Kat Milk Chocolate Wafer Snack ', 10.50)">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Rice Krispies Treats Easter Original">
+            <img src="Rice Krispies Treats Easter Original.webp" alt="Rice Krispies Treats Easter Original">
+            <h3>Rice Krispies Treats Easter Original</h3>
+            <p>About this item<br>
+                <li>Puffed, oven-toasted rice cereal with the irresistible flavor of soft marshmallows in a bite-size square in a fun, festive Easter box; Shelf-Stable</li></p>
+            <span>$5 BZD</span>
+            <button onclick="addToCart('Rice Krispies Treats Easter Original', 5)">Add to Cart</button>
+        </div>
+      </section>
+        <!-- Add more products as needed -->
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Sweet Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
