@@ -126,7 +126,7 @@ nav a:hover {
 }
 
 .product {
-    background: white;
+    background: rgb(14, 152, 167);
     padding: 20px;
     width: 280px;
     border-radius: 10px;
@@ -143,13 +143,13 @@ nav a:hover {
 
 .product h3 {
     font-size: 20px;
-    color: #333;
+    color: #141313;
     margin: 10px 0;
 }
 
 .product p {
     font-size: 14px;
-    color: #666;
+    color: #646161;
     margin: 5px 0;
 }
 
@@ -542,7 +542,7 @@ body {
     background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-    color: #fff;
+    color: #000000;
 }
 
 @keyframes gradientBG {
