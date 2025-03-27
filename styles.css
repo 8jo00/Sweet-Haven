@@ -531,3 +531,111 @@ footer {
     text-align: center;
 }
 
+/* ===== Updated RGB Body Background ===== */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ===== Updated Navigation Bar ===== */
+nav {
+    background: linear-gradient(-45deg, #ff758c, #ff7eb3, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    padding: 15px 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Updated Footer ===== */
+footer {
+    background: linear-gradient(-45deg, #ff758c, #ff7eb3, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ===== Product Cards ===== */
+.product {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* ===== Cart and Receipt Styles ===== */
+.receipt, .payment {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Text Contrast Adjustments ===== */
+.receipt-header h2, 
+.receipt-items h3, 
+.payment h3,
+.receipt-totals p,
+.receipt-totals strong,
+.product h3,
+.product p,
+.product span {
+    color: #333; /* Dark text for better readability on light backgrounds */
+}
+
+/* ===== Button Styles ===== */
+.product button,
+.payment button,
+.contact-info a {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    color: white;
+    transition: all 0.3s;
+}
+
+.product button:hover,
+.payment button:hover,
+.contact-info a:hover {
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
